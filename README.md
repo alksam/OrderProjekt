@@ -26,3 +26,20 @@ I dette projekt anvendes både superviseret og usuperviseret maskinlæring til a
 - **Precision:** Angiver, hvor mange af de forudsagte positive tilfælde, der faktisk er positive. Bruges især, når det er vigtigt at minimere falske positive.
 - **Recall:** Måler, hvor mange af de faktiske positive tilfælde, der blev korrekt forudsagt som positive. Bruges, når det er vigtigt at fange så mange positive tilfælde som muligt.
 - **ROC AUC:** ROC AUC (Receiver Operating Characteristic - Area Under Curve) viser modellens evne til at skelne mellem positive og negative klasser. En højere AUC-værdi indikerer en bedre præstation.
+### Dataforberedelse og datakvalitet
+
+Data blev indsamlet fra `Orders.csv` og gennemgik en række dataforberedelses- og rensningsprocesser for at sikre kvaliteten. Dette omfattede:
+
+1. **Håndtering af manglende værdier:**
+   - Numeriske kolonner blev udfyldt med gennemsnittet for at undgå påvirkning af manglende data. 
+   - Kategoriske variabler blev udfyldt med den mest almindelige værdi for at sikre konsistens.
+
+2. **Fjernelse af outliers:**
+   - Outliers blev identificeret og fjernet ved hjælp af boksplot-metoden, hvor data uden for 1,5 gange interkvartilområdet (IQR) blev fjernet.
+
+3. **Datatransformation:**
+   - Datoformater blev konverteret til datetime-format for at muliggøre tidsbaserede analyser.
+   - Kategoriske variabler blev omkodet ved brug af one-hot encoding for at forberede dataene til maskinlæringsmodellerne.
+
+#### Datakvalitet:
+Der var nogle inkonsekvenser i dataene, såsom duplikerede rækker og manglende værdier, som blev håndteret ved at fjerne dubletter og udfylde manglende data. Der var også ubalancerede klasser, hvilket blev adresseret ved at bruge stratificeret sampling til at opdele data i trænings- og testdatasæt.
