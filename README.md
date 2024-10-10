@@ -1,11 +1,16 @@
 # OrderProjekt
 ## Problemformulering
 
-Dette projekt har til formål at analysere og optimere ordredata ved hjælp af Business Intelligence (BI)-værktøjer og maskinlæringsmodeller. Målet er at forudsige fremtidige ordrer, analysere effekten af rabatstrategier og optimere lagerstyring. Dataene fra **Orders.csv** omfatter flere dimensioner såsom kundedetaljer, produktkategorier, geografisk placering og prisfastsættelse, som vil blive brugt til at løse følgende spørgsmål:
+Dette projekt sigter mod at anvende moderne Business Intelligence (BI) og kunstig intelligens (AI) metoder til at analysere og optimere ordredata. Formålet er at:
+1. Forudsige fremtidige ordrer baseret på historiske kundedata, produkttyper og geografiske faktorer.
+2. Evaluere effekten af rabatstrategier for at finde en optimal balance mellem øget salg og opretholdelse af fortjeneste.
+3. Optimere lagerstyring ved hjælp af præcise salgsprognoser for at sikre, at lagerbeholdningen matcher efterspørgslen.
+4. Identificere geografiske salgsområder med højt potentiale og tilpasse markedsførings- og distributionsstrategier i overensstemmelse hermed.
 
-1. **Forudsigelse af fremtidige ordrevolumener**: Hvilke faktorer påvirker sandsynligheden for fremtidige ordrer baseret på kundens tidligere købsadfærd, produktkategorier og geografiske områder?
-2. **Effekt af rabatter**: Hvordan påvirker forskellige rabatniveauer den samlede ordremængde og indtægt? Er der en optimal rabatstrategi, der kan maksimere omsætningen uden at reducere fortjenesten væsentligt?
-3. **Geografisk optimering**: Hvilke geografiske områder genererer de højeste salgsvolumener, og hvilke produkter er mest populære i disse områder? Hvordan kan virksomheden målrette markedsføring og distribution for at maksimere salget?
+Projektet skal give en brugbar løsning, der kombinerer dataanalyse, maskinlæring og interaktiv visualisering for at understøtte beslutningstagning. Den forventede positive effekt er øget salgspræcision, effektiv lagerstyring og bedre kundeindsigt.
+
+
+
 
 ## Metode
 
