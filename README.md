@@ -43,3 +43,22 @@ Data blev indsamlet fra `Orders.csv` og gennemgik en række dataforberedelses- o
 
 #### Datakvalitet:
 Der var nogle inkonsekvenser i dataene, såsom duplikerede rækker og manglende værdier, som blev håndteret ved at fjerne dubletter og udfylde manglende data. Der var også ubalancerede klasser, hvilket blev adresseret ved at bruge stratificeret sampling til at opdele data i trænings- og testdatasæt.
+
+### Modelleringsprocessen
+
+1. **Valg af algoritmer:** 
+   Random Forest blev valgt til klassifikationsopgaven på grund af dets evne til at håndtere komplekse ikke-lineære sammenhænge i dataene. K-means clustering blev anvendt til at gruppere kunder i segmenter baseret på købsmønstre.
+
+2. **Hyperparameter tuning:** 
+   Grid Search blev anvendt til at finde de optimale hyperparametre for Random Forest ved at søge på tværs af forskellige kombinationer af parametre. Dette hjalp med at forbedre modellernes præcision.
+
+3. **Modelvalidering:** 
+   Data blev opdelt i trænings- og testdatasæt (70/30), og k-folde krydsvalidering blev brugt på træningsdatasættet for at vurdere modellernes generaliserbarhed.
+### Klyngeanalyse og A/B tests
+
+1. **Klyngeanalyse:** 
+   K-means clustering blev brugt til at gruppere data i klynger baseret på lignende mønstre. Klyngernes kvalitet blev vurderet ved brug af silhuetkoefficienten, som måler, hvor godt datapunkterne passer til deres respektive klynger.
+
+2. **A/B tests:** 
+   A/B tests blev udført for at sammenligne effekten af forskellige rabatstrategier på salgsvolumen. En statistisk t-test blev brugt til at vurdere, om der var en signifikant forskel mellem grupperne.
+
